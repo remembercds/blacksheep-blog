@@ -60,6 +60,7 @@ class Entry(flask_db.Model):
     content = TextField()
     published = BooleanField(index=True)
     timestamp = DateTimeField(default=datetime.datetime.now, index=True)
+    tease = 
 
     @property
     def html_content(self):

@@ -23,10 +23,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> 
-	  <img src="/static/hackerylogo.png" alt="a black sheep" width="50" height="50">
+          </button>
           <a class="navbar-brand" href="{{ url_for('index') }}">Black Sheep Security</a>
+	  <img src="/static/hackerylogo.png" alt="a black sheep" width="50" height="50">
         </div>
+
+
+
+          <ul class="nav navbar-nav">
+
+              <li><a href="{{ url_for('drafts') }}">Catagories</a></li>
+              <li><a href="{{ url_for('create') }}">About</a></li>
+
+
+          </ul>
+
+
+
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% if session.logged_in %}
